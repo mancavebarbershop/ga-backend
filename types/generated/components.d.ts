@@ -85,6 +85,7 @@ export interface ComponentsHero extends Schema.Component {
   info: {
     displayName: 'hero';
     icon: 'folder';
+    description: '';
   };
   attributes: {
     heading: Attribute.String;
@@ -93,6 +94,7 @@ export interface ComponentsHero extends Schema.Component {
     buttonText: Attribute.String;
     alignment: Attribute.Enumeration<['left', 'center', 'right']>;
     imageURL: Attribute.Media;
+    imagePosition: Attribute.Enumeration<['above', 'below']>;
   };
 }
 
